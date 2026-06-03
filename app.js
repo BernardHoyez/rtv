@@ -9,7 +9,7 @@ const BASE = '/rtv';
 // Après déploiement du worker, remplacez cette URL par la vôtre :
 // ex: 'https://rtv-proxy.bernard.workers.dev'
 // Tant que non configuré, on tente d'abord sans proxy.
-const CF_PROXY = '';   // <-- collez votre URL workers.dev ici après déploiement
+const CF_PROXY = 'https://rtv-proxy.bhoyez.workers.dev';  // <-- collez votre URL workers.dev ici après déploiement
 
 // Proxy de secours public (sans réécriture Referer, moins fiable pour TV)
 const PUBLIC_PROXY = 'https://corsproxy.io/?';
