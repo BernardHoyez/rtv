@@ -14,7 +14,7 @@ const CF_PROXY = 'https://rtv-proxy.bhoyez.workers.dev';  // <-- collez votre UR
 // Proxy de secours public (sans réécriture Referer, moins fiable pour TV)
 const PUBLIC_PROXY = 'https://corsproxy.io/?';
 
-function proxyUrl(url) {
+function proxyUrl(url) { url = url.trim();
   if (CF_PROXY) return `${CF_PROXY}?url=${encodeURIComponent(url)}`;
   return PUBLIC_PROXY + encodeURIComponent(url);
 }
